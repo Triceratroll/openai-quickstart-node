@@ -16,6 +16,7 @@ export default function Home() {
       body: JSON.stringify({ animal: animalInput }),
     });
     const data = await response.json();
+    console.log(data);
     setResult(data.result);
     setAnimalInput("");
   }
